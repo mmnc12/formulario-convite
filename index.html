@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -12,6 +13,7 @@
     href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400..800&family=Leckerli+One&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
     rel="stylesheet">
 </head>
+
 <body>
   <div id="app">
     <aside class="aside-container">
@@ -24,7 +26,58 @@
 
     <main class="main-container">
       <h1>Crie seu convite</h1>
+
+      <form>
+        <fieldset class="child-info">
+          <img src="assets/icons/calendar.svg" alt="Ícone de calendário">
+          <legend>Sobre o evento</legend>
+
+          <div class="input-wrapper">
+            <label for="nametitle">Título</label>
+            <input type="text" id="nametitle" name="nametitle" placeholder="Nome do evento">
+          </div>
+
+          <div class="inputsdate-wrapper">
+            <div class="input-wrapper">
+              <label for="startdate">Início</label>
+              <input type="date" id="startdate" name="startdate">
+            </div>
+            <div class="input-wrapper">
+              <label for="enddate">Fim</label>
+              <input type="date" id="enddate" name="enddate">
+            </div>
+          </div>
+
+          <div class="type-wrapper">
+            <div class="input-wrapper">
+              <label>Tipo</label>
+              <div class="radio-wrapper">
+                <input type="radio" id="house" value="house" name="house-shift">
+                <img src="assets/icons/building-2.svg" alt="Ícone de um prédio">
+                <label for="house">Presencial</label>
+              </div>
+              <div class="radio-wrapper">
+                <input type="radio" id="online" value="online" name="house-shift">
+                <img src="assets/icons/video.svg" alt="Ícone de uma câmera">
+                <label for="online">Online</label>
+              </div>
+            </div>
+            <div class="input-wrapper">
+              <label for="location">Local</label>
+              <input type="text" id="location" name="location" placeholder="Link ou endereço">
+            </div>
+          </div>
+
+          <div class="textarea-wrapper">
+            <label for="descrition">Descrição</label>
+            <textarea name="descrition" id="descrition" placeholder="Escreva os detalhes de evento" cols="30"
+              rows="5"></textarea>
+          </div>
+
+        </fieldset>
+      </form>
     </main>
   </div>
 </body>
+
 </html>
