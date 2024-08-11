@@ -7,16 +7,6 @@
   overflow: hidden;
 }
 
-main {
-  overflow: auto;
-  padding: 5rem 8.125rem;
-
-  & .aside-container {
-    max-width: 35rem;
-    margin-block: auto;
-  }
-}
-
 aside {
   padding: 2rem;
   background-image: url(../assets/Background.svg);
@@ -24,6 +14,38 @@ aside {
 
   & .aside-container {
     max-width: 21rem;
+    margin-block: auto;
+
+  }
+
+  & .logo {
+    width: 2.86rem;
+    height: 3rem;
+  }
+  
+  & .title {
+    font-family: "Leckerli One", cursive;
+    font-size: 2.5rem;
+    color: #FF598B;
+    font-weight: normal;
+    margin-top: 1rem;
+    margin-bottom: .25rem;
+  }
+
+  & .sp {
+    font-family: "Open Sans", sans-serif;
+    font-size: 1rem;
+    font-weight: lighter;
+  }
+}
+
+main {
+  overflow: auto;
+  padding: 5rem 8.125rem;
+  background-color: var(--shape-body);
+
+  & .aside-container {
+    max-width: 35rem;
     margin-block: auto;
   }
 }
