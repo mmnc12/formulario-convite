@@ -1,0 +1,52 @@
+label + .radio-wrapper {
+  margin-top: 1rem;
+}
+
+.radio-wrapper {
+
+  display: flex;
+
+  border-radius: .25rem;
+
+  justify-content: center;
+  align-items: center;
+
+  padding: .25rem .25rem;
+
+  width: 8.125rem;
+
+  & input,
+  & input:focus,
+  & input:hover {
+    all: unset;
+  }
+
+  & label {
+    color: var(--text-body);
+    margin-left: .5rem;
+  }
+
+  &:hover {
+    background-color: var(--input-stroke);
+    font-family: "Open Sans", sans-serif;
+    font-size: .875rem;
+    font-weight: bold;
+
+    & svg path {
+      stroke: var(--brand-dark);
+    }
+  }
+}
+
+.inner-wrapper {
+  border: 1px solid var(--input-stroke);
+  border-radius: .25rem;
+  display: flex;
+  justify-content: space-around;
+
+  background-color: var(--input-base);
+
+  height: 3rem;
+  padding: .25rem;
+  
+}
