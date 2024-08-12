@@ -15,10 +15,13 @@ label + .radio-wrapper {
 
   width: 8.125rem;
 
+  position: relative;
   & input,
   & input:focus,
   & input:hover {
     all: unset;
+    position: absolute;
+    inset: 0;
   }
 
   & label {
@@ -26,7 +29,18 @@ label + .radio-wrapper {
     margin-left: .5rem;
   }
 
-  &:hover {
+  &:hover, &:focus-within {
+    background-color: var(--input-stroke);
+    font-family: "Open Sans", sans-serif;
+    font-size: .875rem;
+    font-weight: bold;
+
+    & svg path {
+      stroke: var(--brand-dark);
+    }
+  }
+
+  &:has(:checked) {
     background-color: var(--input-stroke);
     font-family: "Open Sans", sans-serif;
     font-size: .875rem;
