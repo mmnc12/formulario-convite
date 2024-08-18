@@ -97,3 +97,115 @@ legend {
 }
 
 
+.child-personalize .header {
+  display: flex;
+  align-items: center;
+  gap: .75rem;
+
+  margin-top: 3rem;
+  margin-bottom: 1.5rem;
+
+  & img {
+    opacity: 50%;
+    height: 1.5rem;
+    width: 1.5rem;
+  }
+}
+
+.select-cor {
+  display: flex;
+  gap: .75rem;
+
+  margin-top: 1rem;
+
+
+  & #im1:hover {
+    svg {
+      stroke: #59B2FF;
+    }
+  }
+
+  & #im2:hover {
+    svg {
+      stroke: #59B2FF;
+    }
+  }
+
+  & #im3:hover {
+    svg {
+      stroke: #59B2FF;
+    }
+  }
+
+  & #im4:hover {
+    svg {
+      stroke: #59B2FF;
+    }
+  }
+
+  & #im5:hover {
+    svg {
+      stroke: #59B2FF;
+    }
+  }
+
+  & #im6:hover {
+    svg {
+      stroke: #59B2FF;
+    }
+  }
+
+  & #im7:hover {
+    svg {
+      stroke: #59B2FF;
+    }
+  }
+
+  & #im8:hover {
+    svg {
+      stroke: #59B2FF;
+    }
+  }
+
+  & #im9:hover {
+    svg {
+      stroke: #59B2FF;
+    }
+  }
+
+  & #im10:hover {
+    svg {
+      stroke: #59B2FF;
+    }
+  }
+
+  & #im11:hover {
+    svg {
+      stroke: #59B2FF;
+    }
+  }
+
+}
+
+.img {
+  position: relative;
+  
+  & input,
+  & input:focus,
+  & input:hover {
+    all: unset;
+    position: absolute;
+    inset: 0;
+  } 
+
+  &:has(:checked) {
+    svg {
+      stroke: #59B2FF;
+    }
+  }
+}
+
+
+
+
+
