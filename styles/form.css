@@ -2,6 +2,13 @@
 
 form {
   margin-top: 2.5rem;
+  width: 35rem;
+
+  gap: 1rem;
+
+  & label {
+    margin-bottom: .75rem;
+  }
 }
 
 fieldset {
@@ -189,14 +196,14 @@ legend {
 
 .img {
   position: relative;
-  
+
   & input,
   & input:focus,
   & input:hover {
     all: unset;
     position: absolute;
     inset: 0;
-  } 
+  }
 
   &:has(:checked) {
     svg {
@@ -205,7 +212,134 @@ legend {
   }
 }
 
+.event-theme {
+  & label {
+    margin-top: 1.75rem;
+    margin-bottom: 1rem;
+  }
+}
 
+.img-theme {
+  display: grid;
+  grid-template-columns: 8.375rem 8.375rem 8.375rem 8.375rem;
+  gap: .5rem;
+
+  margin-bottom: 1.75rem;
+
+  .img {
+    background-color: var(--input-stroke);
+    border-color: var(--input-placeholder);
+    border-radius: .5rem;
+    text-align: center;
+
+    font-family: 'Open Sans', sans-serif;
+    font-size: .875rem;
+    font-weight: normal;
+
+    padding: .25rem .25rem .5rem .25rem;
+
+    img {
+      margin-bottom: .4rem;
+    }
+
+    position: relative;
+
+    & input,
+    & input:focus,
+    & input:hover {
+      all: unset;
+      position: absolute;
+      inset: 0;
+    }
+
+    &:has(:checked) {
+      outline: 2px solid #59B2FF;
+    }
+
+  }
+
+  & #imge1:hover {
+    outline: 2px solid #59B2FF;
+  }
+
+  & #imge2:hover {
+    outline: 2px solid #59B2FF;
+  }
+
+  & #imge3:hover {
+    outline: 2px solid #59B2FF;
+  }
+
+  & #imge4:hover {
+    outline: 2px solid #59B2FF;
+  }
+
+  & #imge5:hover {
+    outline: 2px solid #59B2FF;
+  }
+
+  & #imge6:hover {
+    outline: 2px solid #59B2FF;
+  }
+
+  & #imge7:hover {
+    outline: 2px solid #59B2FF;
+  }
+
+  & #imge8:hover {
+    outline: 2px solid #59B2FF;
+  }
+
+  & #imge9:hover {
+    outline: 2px solid #59B2FF;
+  }
+
+  & #imge10:hover {
+    outline: 2px solid #59B2FF;
+  }
+
+  & #imge11:hover {
+    outline: 2px solid #59B2FF;
+  }
+
+  & #imge12:hover {
+    outline: 2px solid #59B2FF;
+  }
+}
+
+
+.child-contact {
+
+  margin-top: 3rem;
+
+  & .header {
+    display: flex;
+    align-items: center;
+    gap: .75rem;
+  
+    & img {
+      opacity: 50%;
+      height: 1.5rem;
+      width: 1.5rem;
+    }
+  }
+
+  .complementary-data {
+    display: grid;
+
+    margin-top: 2.5rem;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 1rem;
+  }
+
+  .form {
+    & label {
+      margin-bottom: .75rem;
+    }
+  }
+}
 
 
 

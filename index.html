@@ -90,7 +90,7 @@
 
         </fieldset>
 
-        <div class="child-personalize">
+        <fieldset class="child-personalize">
           <div class="header">
             <img src="assets/icons/paintbrush-vertical.svg" alt="Ícone de pincel">
             <legend>Personalização</legend>
@@ -196,13 +196,142 @@
                   <rect x="6" y="6" width="28" height="28" rx="14" fill="#59FFF9" />
                 </svg>
               </div>
+            </div>
 
+            <div class="event-theme">
+              <label>Tema do evento</label>
+              <div class="img-theme">
+                <div id="imge1" class="img">
+                  <input type="radio" id="imagem1" name="temas" value="imagem1">
+                  <img src="assets/icons/icons_tema/Image.svg" alt="Imagem de aniversário">
+                  <span class="sp">Aniversário</span>
+                </div>
+
+                <div id="imge2" class="img">
+                  <input type="radio" id="imagem2" name="temas" value="imagem2">
+                  <img src="assets/icons/icons_tema/Image (1).svg" alt="Imagem de festa infantil">
+                  <span class="sp">infantil</span>
+                </div>
+
+                <div id="imge3" class="img">
+                  <input type="radio" id="imagem3" name="temas" value="imagem3">
+                  <img src="assets/icons/icons_tema/Image (2).svg" alt="Imagem chapeu de formatura">
+                  <span class="sp">Formatura</span>
+                </div>
+
+                <div id="imge4" class="img">
+                  <input type="radio" name="temas" id="imagem4" value="imagem4">
+                  <img src="assets/icons/icons_tema/Image (3).svg" alt="Imagem de aliança de casamento">
+                  <span class="sp">Casamento</span>
+                </div>
+
+                <div id="imge5" class="img">
+                  <input type="radio" name="temas" id="imagem5" value="imagem5">
+                  <img src="assets/icons/icons_tema/Image (4).svg" alt="Imagem de uma flor e um lença úmido de bebê">
+                  <span class="sp">Chá de bebê</span>
+                </div>
+
+                <div id="imge6" class="img">
+                  <input type="radio" name="temas" id="imagem6" value="imagem6">
+                  <img src="assets/icons/icons_tema/Image (5).svg" alt="Imagem de utencílio de cozinha">
+                  <span class="sp">Chá de panela</span>
+                </div>
+
+                <div id="imge7" class="img">
+                  <input type="radio" name="temas" id="imagem7" value="imagem7">
+                  <img src="assets/icons/icons_tema/Image (6).svg" alt="Imagem de fita de carnaval">
+                  <span class="sp">Carnaval</span>
+                </div>
+
+                <div id="imge8" class="img">
+                  <input type="radio" name="temas" id="imagem8" value="imagem8">
+                  <img src="assets/icons/icons_tema/Image (7).svg" alt="Imagem de ovo de páscoa">
+                  <span class="sp">Páscoa</span>
+                </div>
+
+                <div id="imge9" class="img">
+                  <input type="radio" name="temas" id="imagem9" value="imagem9">
+                  <img src="assets/icons/icons_tema/Image (8).svg" alt="Imagem de banderola de são joão">
+                  <span class="sp">São João</span>
+                </div>
+
+                <div id="imge10" class="img">
+                  <input type="radio" name="temas" id="imagem10" value="imagem10">
+                  <img src="assets/icons/icons_tema/Image (9).svg" alt="Imagem de abóbora de halloween">
+                  <span class="sp">Helloween</span>
+                </div>
+
+                <div id="imge11" class="img">
+                  <input type="radio" name="temas" id="imagem11" value="imagem11">
+                  <img src="assets/icons/icons_tema/Image (10).svg" alt="Imagem de presente de natal">
+                  <span class="sp">Natal</span>
+                </div>
+
+                <div id="imge12" class="img">
+                  <input type="radio" name="temas" id="imagem12" value="imagem12">
+                  <img src="assets/icons/icons_tema/Image (11).svg" alt="Imagem de varias maõs">
+                  <span class="sp">Outros</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="switch-toggle">
+              <label class="switch-label">
+                <div class="sp">
+                  <span>Estilo</span>
+                </div>
+                <input type="checkbox" class="toggle-input">
+                <div class="slide">
+                  <button class="button">
+                  </button>
+                </div>
+              </label>
+
+              <div class="file-input">
+                <div class="sp">
+                  <span>Foto de capa</span>
+                </div>
+                <div class="input-file">
+                  <label for="file">
+                    <img src="assets/icons/upload (1).svg" alt="Icone de upload"> &nbsp;
+                    Selecionar
+                  </label>
+                  <span>Nenhum arquivo selecionado</span>
+                  <input type="file" name="file" id="file">
+                </div>
+              </div>
             </div>
           </div>
-        </div>
+        </fieldset>
+
+        <fieldset class="child-contact">
+          <div class="header">
+            <img src="assets/icons/contact.svg" alt="Ícone de foto 3 por 4">
+            <legend>Personalização</legend>
+          </div>
+          <div class="form">
+            <form>
+              <label>Nome</label>
+              <input type="text" name="name" id="name" placeholder="Nome completo">
+
+              <div class="complementary-data">
+                <div>
+                  <label>E-mail</label>
+                  <input type="email" name="email" id="email" placeholder="exemplo@email.com">
+                </div>
+
+                <div>
+                  <label>Telefone</label>
+                  <input type="phone" name="phone" id="phone" placeholder="(99) 99999-9999 ">
+                </div>
+              </div>
+            </form>
+          </div>
+        </fieldset>
       </form>
     </main>
   </div>
+
 </body>
 
 </html>
