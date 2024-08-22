@@ -312,8 +312,11 @@
           <div class="form">
             <form>
               <label>Nome</label>
-              <input type="text" name="name" id="name" placeholder="Nome completo">
-
+              <input type="text" name="name" id="name" placeholder="Nome completo" required>
+              <div class="error">
+                <img src="assets/icons/circle-alert.svg" alt="Icone de alerta da error">
+                <span>Campo obrigatório</span>
+              </div>
               <div class="complementary-data">
                 <div>
                   <label>E-mail</label>
@@ -328,7 +331,50 @@
             </form>
           </div>
         </fieldset>
-      </form>
+
+        <fieldset class="child-footer">
+          <div class="checkbox-group">
+            <div class="checkbox">
+              <label>
+                <div class="checkbox-image1"></div>
+                <input type="checkbox" name="terms" id="terms">
+                <label for="terms">Li e concordo com os <strong>Termos e Condições</strong> e com a <strong>Política de
+                    Privacidade</strong></label>
+              </label>
+            </div>
+            <div class="checkbox">
+              <label>
+                <div class="checkbox-image2"></div>
+                <input type="checkbox" name="termsEmail" id="termsEmail">
+                <label for="termsEmail">Aceito receber atualizações e promoções por e-mail</label>
+              </label>
+            </div>
+            <div class="checkbox">
+              <label>
+                <div class="checkbox-image3"></div>
+                <input type="checkbox" name="termsSms" id="termsSms">
+                <label for="termsSms">Aceito receber atualizações e promoções por SMS</label>
+              </label>
+            </div>
+          </div>
+          <div class="button">
+            <button type="button">
+              <img src="assets/icons/ticket.svg" alt="Ícone de ticket">
+              Gerar convite
+            </button>
+          </div>
+        </fieldset>
+        <!-- <div class="checkbox">
+          <div class="checkbox-image1"></div>
+          <input type="checkbox" name="terms" id="terms">
+          <label for="terms">Li e concordo com os <strong>Termos e Condições</strong> e com a <strong>Política de Privacidade</strong></label>
+        </div>
+         <div class="checkbox">
+              <div class="checkbox-image2"></div>
+              <input type="checkbox" name="termsEmail" id="termsEmail">
+              <label for="termsEmail">Aceito receber atualizações e promoções por e-mail</label>
+            </div>
+      </form> -->
     </main>
   </div>
 

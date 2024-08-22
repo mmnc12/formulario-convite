@@ -316,7 +316,7 @@ legend {
     display: flex;
     align-items: center;
     gap: .75rem;
-  
+
     & img {
       opacity: 50%;
       height: 1.5rem;
@@ -324,22 +324,110 @@ legend {
     }
   }
 
-  .complementary-data {
-    display: grid;
-
-    margin-top: 2.5rem;
-
-    grid-template-columns: 1fr 1fr;
-
-    gap: 1rem;
-  }
-
   .form {
-    & label {
-      margin-bottom: .75rem;
+
+    & input {
+      &:invalid {
+        border: .125rem solid #FF5959;
+      }
+
+      &[required] + .error {
+        display: flex;
+        align-items: center;
+        gap: .5rem;
+
+        margin-top: .5rem;
+
+        margin-top: .5rem;
+
+        color: #FF5959;
+
+        & img {
+          height: 1rem;
+          width: 1rem;
+        }
+      }
+
+      &:valid+.error {
+        display: none;
+      }
     }
+
+
+
+
+    /* & .error {
+      
+      & img {
+        height: 1rem;
+        width: 1rem;
+      }
+
+      & span {
+        font-size: .75rem;
+        color: #FF5959;
+      } */
   }
 }
 
+.complementary-data {
+  display: grid;
 
+  margin-top: 2.5rem;
 
+  grid-template-columns: 1fr 1fr;
+
+  gap: 1rem;
+}
+
+.form {
+  & label {
+    margin-bottom: .75rem;
+  }
+}
+
+.child-footer {
+  
+  & .button {
+    
+    margin: 3rem;
+    margin-right: 0;
+    
+    position: relative;
+    margin-left: 25rem;
+
+    
+    & button {
+      display: flex;
+      width: 11.0625rem;
+      height: 3rem;
+      text-align: center;
+      padding: .25rem 1.25rem;
+
+      align-items: center;
+      justify-content: center;
+
+      font-family: 'Open Sans';
+      font-size: 1rem;
+      font-weight: 600;
+
+      border: none;
+      border-radius: .5rem;
+
+      background-color: #1D6FB6;
+
+      position: absolute;
+
+      gap: .75rem;
+
+      color: #F9F9F9;
+
+      & img {
+        height: 1.25rem;
+        width: 1.25rem;
+      }
+
+      cursor: pointer;
+    }
+  }
+}
